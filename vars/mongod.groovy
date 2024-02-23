@@ -9,7 +9,7 @@ def bootstrap() {
     ]
 
     try {
-        new org.rxdb.AnsibleRunner.runCmd(script, ansibleParams)
+        org.rxdb.AnsibleRunner.runCmd(script, ansibleParams)
     } catch (Exception e) {
         script.echo "Failed to execute Ansible playbook: ${e.getMessage()}"
         script.currentBuild.result = 'FAILURE'
