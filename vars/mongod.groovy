@@ -1,5 +1,5 @@
 def bootstrap() {
-    println "Bootstrap..."
+    println "Bootstrap...${env.CUSTOMER}"
 // def bootstrap(Map params) {
 //     def script = params.script
 //     def ansibleParams = [
